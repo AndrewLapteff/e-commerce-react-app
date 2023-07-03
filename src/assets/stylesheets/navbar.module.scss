@@ -1,0 +1,63 @@
+@import "app.scss";
+.navbar-container {
+  background-color: rgb(255, 255, 255);
+  height: 70px;
+  display: flex;
+  align-items: center;
+  & .wrapper {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    .left,
+    .right,
+    .center {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .left {
+      flex: 1;
+      font-size: 2rem;
+      justify-content: flex-start;
+    }
+    .right {
+      flex: 1;
+      justify-content: flex-end;
+      .cart {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        width: 50px;
+        position: relative;
+        .price {
+          width: 17px;
+          height: 17px;
+          color: white;
+          background-color: red;
+          border-radius: 50%;
+          display: block;
+          font-size: 0.8rem;
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
+      }
+    }
+    .center {
+      flex: 2;
+      gap: 10px;
+      & input {
+        background-color: slategray;
+        font-size: $font-size-small;
+        color: white;
+        padding: 3px;
+        border-radius: 5px;
+        border: 1px solid black;
+      }
+    }
+  }
+}
