@@ -1,6 +1,6 @@
 import React from 'react'
-import s from '../assets/stylesheets/categiries.module.scss'
-import { categories } from '../data'
+import s from '../../assets/stylesheets/categiries.module.scss'
+import { categories } from '../../data'
 import CategoryItem from './CategoryItem'
 
 const Categories = () => {

@@ -1,6 +1,6 @@
 import React from 'react'
-import s from '../assets/stylesheets/categoryItem.module.scss'
-import Category from '../types/category'
+import s from '../../assets/stylesheets/categoryItem.module.scss'
+import Category from '../../types/category'
 
 const CategoryItem = ({ item }: { item: Category }) => {
   return (

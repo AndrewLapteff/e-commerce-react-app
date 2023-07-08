@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react'
-import s from '../assets/stylesheets/slider.module.scss'
-import leftArrow from '../assets/images/svg/left-arrow.svg'
-import righttArrow from '../assets/images/svg/right-arrow.svg'
-import { sliderItems } from '../data'
+import s from '../../assets/stylesheets/slider.module.scss'
+import leftArrow from '../../assets/images/svg/left-arrow.svg'
+import righttArrow from '../../assets/images/svg/right-arrow.svg'
+import { sliderItems } from '../../data'
 
 const Slider = () => {
   const [slide, setSlide] = useState(0)

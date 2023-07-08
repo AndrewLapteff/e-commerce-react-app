@@ -1,6 +1,6 @@
 import React from 'react'
-import sendIcon from '../assets/images/svg/send-icon.svg'
-import s from '../assets/stylesheets/newsletter.module.scss'
+import sendIcon from '../../assets/images/svg/send-icon.svg'
+import s from '../../assets/stylesheets/newsletter.module.scss'
 
 const Newsletter = () => {
   return (

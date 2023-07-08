@@ -1,7 +1,7 @@
 import React from 'react'
-import s from '../assets/stylesheets/navbar.module.scss'
-import magnifyingGlass from '../assets/images/svg/magnifying-glass.svg'
-import shoppingCart from '../assets/images/svg/shopping-cart.svg'
+import s from '../../assets/stylesheets/navbar.module.scss'
+import magnifyingGlass from '../../assets/images/svg/magnifying-glass.svg'
+import shoppingCart from '../../assets/images/svg/shopping-cart.svg'
 
 const Navbar = () => {
   return (

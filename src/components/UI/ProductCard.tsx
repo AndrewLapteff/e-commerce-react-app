@@ -1,10 +1,10 @@
 import React from 'react'
-import s from '../assets/stylesheets/product.module.scss'
-import shoppingCart from '../assets/images/svg/shopping-cart.svg'
-import heartIcon from '../assets/images/svg/heart.svg'
-import magnifyingGlass from '../assets/images/svg/magnifying-glass.svg'
+import s from '../../assets/stylesheets/productCard.module.scss'
+import shoppingCart from '../../assets/images/svg/shopping-cart.svg'
+import heartIcon from '../../assets/images/svg/heart.svg'
+import magnifyingGlass from '../../assets/images/svg/magnifying-glass.svg'
 
-const Product = ({ img }: { img: string }) => {
+const ProductCard = ({ img }: { img: string }) => {
   return (
     <div className={s.container}>
       <div className={s.background}></div>
@@ -19,4 +19,4 @@ const Product = ({ img }: { img: string }) => {
   )
 }
 
-export default Product
+export default ProductCard
