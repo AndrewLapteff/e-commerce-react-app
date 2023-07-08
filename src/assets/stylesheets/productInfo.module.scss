@@ -1,0 +1,36 @@
+.container {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .info {
+    width: 50%;
+    font-size: 1.5rem;
+    .pricings {
+      display: flex;
+      flex-direction: column;
+      .price {
+        font-size: 3rem;
+      }
+      .filters {
+        display: flex;
+        margin-top: 10px;
+        gap: 10px;
+        flex-direction: row;
+        .colors {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 10px;
+          .color {
+            cursor: pointer;
+            border: 1px solid black;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+}
