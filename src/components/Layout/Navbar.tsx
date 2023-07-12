@@ -13,7 +13,6 @@ const Navbar = () => {
           <input type="text" />
         </div>
         <div className={s.right}>
-          {/* Register Login */}
           <div className={s.cart}>
             <img width={25} src={shoppingCart} alt="cart icon" />
             <div className={s.price}>3</div>

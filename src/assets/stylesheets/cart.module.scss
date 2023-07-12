@@ -1,0 +1,23 @@
+.container {
+  // margin-top: 30px;
+  height: calc(100vh - 110px);
+  .title {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+    user-select: none;
+  }
+  .products-wrapper {
+    height: inherit;
+    display: flex;
+    .products-list {
+      overflow-y: scroll;
+      flex: 1;
+      height: inherit;
+    }
+    .order-summary {
+      flex: 0.5;
+      height: inherit;
+    }
+  }
+}

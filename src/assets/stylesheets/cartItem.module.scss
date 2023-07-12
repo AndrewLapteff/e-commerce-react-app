@@ -1,0 +1,44 @@
+.container {
+  width: 100%;
+  background-color: rgba(82, 135, 249, 0.233);
+  height: 50%;
+  display: flex;
+  .image-wrapper {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      height: 75%;
+    }
+  }
+  .info {
+    display: flex;
+    width: 75%;
+    height: 100%;
+    .left {
+      height: 100%;
+      width: 75%;
+      display: flex;
+      justify-content: space-evenly;
+      font-size: 1.3rem;
+      flex-direction: column;
+
+      .title {
+        font-size: 1.8rem;
+      }
+    }
+    .right {
+      height: 100%;
+      width: 25%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .price {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}

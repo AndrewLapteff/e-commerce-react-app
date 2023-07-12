@@ -1,0 +1,28 @@
+.wrapper {
+  width: 85px;
+  height: 85px;
+  display: flex;
+  gap: 0.5rem;
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  button {
+    position: absolute;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    border-style: none;
+    background-color: transparent;
+  }
+  .plus {
+    left: 0;
+    font-size: 1.3rem;
+  }
+  .minus {
+    top: 30%;
+    font-size: 1.5rem;
+    // font-weight: 1000;
+    right: 0;
+  }
+}
