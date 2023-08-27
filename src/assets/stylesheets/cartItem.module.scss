@@ -1,9 +1,16 @@
+@import "responsive.scss";
 .container {
+  overflow-x: hidden;
   width: 100%;
   background-color: rgba(82, 135, 249, 0.073);
   border-radius: 1rem;
-  height: 50%;
   display: flex;
+  @include lg {
+    height: 50%;
+  }
+  @include sm {
+    height: 150px;
+  }
   .image-wrapper {
     height: 100%;
     width: 25%;
@@ -11,7 +18,12 @@
     justify-content: center;
     align-items: center;
     img {
-      height: 75%;
+      @include lg {
+        height: 75%;
+      }
+      @include sm {
+        height: 40%;
+      }
     }
   }
   .info {
@@ -27,7 +39,12 @@
       flex-direction: column;
 
       .title {
-        font-size: 1.8rem;
+        @include lg {
+          font-size: 1.8rem;
+        }
+        @include sm {
+          font-size: 1.3rem;
+        }
       }
     }
     .right {

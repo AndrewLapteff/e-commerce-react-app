@@ -1,9 +1,36 @@
+@import "app.scss";
+@import "responsive.scss";
+
 .container {
-  height: 90vh;
+  overflow: hidden;
+  height: fit-content;
   display: flex;
+  @include lg {
+    flex-direction: row;
+  }
+  @include sm {
+    flex-direction: column;
+  }
   align-items: center;
   justify-content: center;
+  .image {
+    img {
+      @include lg {
+        scale: 100%;
+      }
+      @include sm {
+        scale: 50%;
+      }
+    }
+  }
   .info {
+    width: inherit;
+    .title {
+      text-align: center;
+    }
+
+    .description {
+    }
     width: 50%;
     font-size: 1.5rem;
     .pricings {

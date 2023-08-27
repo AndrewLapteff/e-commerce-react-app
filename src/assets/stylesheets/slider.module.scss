@@ -1,3 +1,4 @@
+@import "responsive.scss";
 .slider-container {
   width: 100%;
   height: 95vh;
@@ -42,21 +43,40 @@
       display: flex;
       .image-container {
         display: flex;
-        justify-content: center;
         flex: 0.5;
-        height: 100%;
         width: 100%;
+        position: relative;
+        height: 100%;
         .image {
-          height: 100%;
+          @include lg {
+            height: 100%;
+          }
+          @include sm {
+            z-index: 0;
+            height: 100%;
+            position: absolute;
+          }
+          img {
+            background-color: black;
+          }
         }
       }
       .info-container {
+        z-index: 1;
         font-size: 1.5rem;
-        flex: 0.6;
+        @include lg {
+          flex: 0.6;
+        }
+        @include sm {
+          flex: 0;
+        }
+        p {
+          background-color: rgba(255, 255, 255, 0.642);
+        }
         text-align: center;
-        margin-right: 100px;
+        width: 100%;
         .shop-button {
-          background-color: transparent;
+          background-color: rgba(255, 255, 255, 0.642);
           font-size: 1.5rem;
           cursor: pointer;
           padding: 10px;

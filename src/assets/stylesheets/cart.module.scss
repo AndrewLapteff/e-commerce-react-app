@@ -1,6 +1,7 @@
+@import "responsive.scss";
 .container {
   // margin-top: 30px;
-  height: calc(100vh - 110px);
+  height: calc(100vh - 130px);
   .title {
     font-size: 2rem;
     text-align: center;
@@ -10,29 +11,91 @@
   .products-wrapper {
     height: inherit;
     display: flex;
+    @include sm {
+      flex-direction: column;
+    }
     .products-list {
+      overflow-x: hidden;
       overflow-y: scroll;
-      flex: 1;
       height: inherit;
+      @include sm {
+        height: 200px;
+      }
+      @include lg {
+        flex: 1;
+      }
     }
     .order-summary {
-      flex: 0.35;
+      @include sm {
+        flex: 0.4;
+      }
+      @include lg {
+        flex: 0.35;
+      }
       height: inherit;
       display: flex;
       justify-content: center;
       align-items: center;
       .wrapper-summary {
-        height: 95%;
+        @include lg {
+          margin-top: 0;
+        }
+        @include sm {
+        }
+        height: 100%;
         width: 90%;
         border: 1px solid black;
         border-radius: 1rem;
-        .title {
-          margin-top: 1rem;
-          font-size: 2.8rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        .top-part {
+          width: 100%;
+          .title {
+            @include lg {
+              margin-top: 1rem;
+            }
+            @include sm {
+              margin-top: 0;
+            }
+            font-size: 2.8rem;
+          }
+          div {
+            width: 85%;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 30px 0 30px;
+            font-size: 2rem;
+          }
         }
-        p {
-          margin-left: 30px;
-          font-size: 2rem;
+        .bottom-part {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          .total {
+            margin-top: 10px;
+            font-size: 2.5rem;
+          }
+          .order-button {
+            @include lg {
+              border-radius: 0.5rem;
+            }
+            @include sm {
+              border-radius: 0.8rem;
+              font-size: 2rem;
+            }
+            cursor: pointer;
+            width: 90%;
+            font-size: 2.5rem;
+            background-color: black;
+            color: white;
+          }
+          @include lg {
+            margin-bottom: 10px;
+          }
         }
       }
     }

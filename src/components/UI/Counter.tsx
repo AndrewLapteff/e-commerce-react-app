@@ -14,12 +14,12 @@ const Counter = () => {
 
   return (
     <div className={s.wrapper}>
-      <button className={s.plus} onClick={() => handleCount('increment')}>
-        +
-      </button>
-      <div>{count}</div>
       <button className={s.minus} onClick={() => handleCount('decrement')}>
         -
+      </button>
+      <div>{count}</div>
+      <button className={s.plus} onClick={() => handleCount('increment')}>
+        +
       </button>
     </div>
   )

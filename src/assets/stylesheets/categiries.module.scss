@@ -1,3 +1,4 @@
+@import "responsive.scss";
 .categiries-container {
   margin-top: 100px;
   width: 100%;
@@ -6,4 +7,7 @@
   gap: 10px;
   height: 99vh;
   position: relative;
+  @include sm {
+    flex-direction: column;
+  }
 }

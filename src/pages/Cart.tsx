@@ -24,21 +24,28 @@ const Cart = () => {
           </div>
           <div className={s['order-summary']}>
             <div className={s['wrapper-summary']}>
-              <h2 className={s.title}>ORDER SUMMARY</h2>
-              <p>
-                Amount: <span>$ 40</span>
-              </p>
-              <p>
-                Fee (0.5%): <span>$ 0.2</span>
-              </p>
-              <p>
-                Total: <span>$ 40.2</span>
-              </p>
+              <div className={s['top-part']}>
+                <h2 className={s.title}>ORDER SUMMARY</h2>
+                <div>
+                  <span>Amount:</span>
+                  <span>$ 40</span>
+                </div>
+                <div>
+                  <span>Fee (0.5%): </span>
+                  <span>$ 0.2</span>
+                </div>
+              </div>
+              <div className={s['bottom-part']}>
+                <div className={s.total}>
+                  <span>Total: </span>
+                  <span>$ 40.2</span>
+                </div>
+                <button className={s['order-button']}>ORDER NOW</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <Footer />
     </>
   )
 }
